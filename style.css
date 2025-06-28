@@ -100,3 +100,113 @@ h6 {
 }
 
 /* general styling */
+
+body {
+	background-color: var(--clr-green-200);
+	font-family: var(--ff-main);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+main {
+	background-color: var(--clr-white);
+	margin: 2rem 1rem;
+	border-radius: 1rem;
+	padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.form__title {
+	color: var(--clr-grey-900);
+	margin-bottom: 1rem;
+}
+
+label,
+legend {
+	color: var(--clr-grey-900);
+}
+
+label span,
+legend span {
+	margin-left: 0.4rem;
+}
+
+input {
+	margin: 0.65rem 0 1.5rem;
+	width: 100%;
+	padding: 0.6rem;
+	border-radius: 8px;
+	border: none;
+	outline: 1px solid var(--clr-grey-500);
+}
+
+.form-control small {
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.radio__btn-container {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+legend {
+	margin-bottom: 0.85rem;
+}
+
+.radio__btn {
+	outline: none;
+	position: absolute;
+	height: 1.3rem;
+	top: 2.6rem;
+	left: -7.5rem;
+}
+
+.radio__btn:nth-of-type(2) {
+	top: 6.4rem;
+}
+
+.radio__btn-label {
+	border: 1px solid var(--clr-grey-500);
+	padding: 0.6rem 0 0.6rem 3.2rem;
+	font-size: var(--fs-normal);
+	display: block;
+	border-radius: 8px;
+	color: var(--clr-grey-900);
+}
+
+.radio__btn-label:nth-of-type(1) {
+	margin-bottom: 1rem;
+}
+
+#message {
+	height: 240px;
+}
+
+.checkbox__container {
+	position: relative;
+	padding-left: 2rem;
+	margin-bottom: 2.35rem;
+}
+
+#checkbox {
+	position: absolute;
+	outline: none;
+	left: -8.75rem;
+	top: 0.2rem;
+	height: 1rem;
+}
+
+button {
+	width: 100%;
+	background-color: var(--clr-green-600);
+	color: var(--clr-green-200);
+	border: none;
+	padding: 0.85rem;
+	font-size: var(--fs-normal);
+	font-weight: 700;
+	border-radius: 8px;
+}
