@@ -141,6 +141,15 @@ input {
 	outline: 1px solid var(--clr-grey-500);
 }
 
+input:hover {
+	cursor: pointer;
+}
+
+input[type='text']:hover,
+input[type='email']:hover {
+	outline: 1px solid var(--clr-green-600);
+}
+
 .form-control small {
 	visibility: hidden;
 	position: absolute;
@@ -169,6 +178,10 @@ legend {
 	top: 6.4rem;
 }
 
+.radio__btn:hover {
+	cursor: pointer;
+}
+
 .radio__btn-label {
 	border: 1px solid var(--clr-grey-500);
 	padding: 0.6rem 0 0.6rem 3.2rem;
@@ -176,6 +189,11 @@ legend {
 	display: block;
 	border-radius: 8px;
 	color: var(--clr-grey-900);
+}
+
+.radio__btn-label:hover {
+	outline: 1px solid var(--clr-green-600);
+	cursor: pointer;
 }
 
 .radio__btn-label:nth-of-type(1) {
@@ -200,6 +218,10 @@ legend {
 	height: 1rem;
 }
 
+#checkbox:hover {
+	cursor: pointer;
+}
+
 button {
 	width: 100%;
 	background-color: var(--clr-green-600);
@@ -213,6 +235,7 @@ button {
 
 button:hover {
 	cursor: pointer;
+	background-color: var(--clr-grey-900);
 }
 
 @media (min-width: 770px) {
@@ -284,5 +307,9 @@ button:hover {
 
 	#checkbox {
 		left: -17.4rem;
+	}
+
+	button {
+		margin-bottom: 1rem;
 	}
 }
