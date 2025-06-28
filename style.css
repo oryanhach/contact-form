@@ -211,6 +211,10 @@ button {
 	border-radius: 8px;
 }
 
+button:hover {
+	cursor: pointer;
+}
+
 @media (min-width: 770px) {
 	main {
 		width: 100%;
@@ -261,5 +265,24 @@ button {
 	#checkbox {
 		left: -19.2rem;
 		top: -0.3rem;
+	}
+}
+
+@media (min-width: 1440px) {
+	main {
+		width: 640px;
+	}
+
+	.radio__btn {
+		left: -16rem;
+	}
+
+	.radio__btn:nth-of-type(2) {
+		top: 2.6rem;
+		left: 2.35rem;
+	}
+
+	#checkbox {
+		left: -17.4rem;
 	}
 }
