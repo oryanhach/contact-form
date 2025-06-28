@@ -210,3 +210,56 @@ button {
 	font-weight: 700;
 	border-radius: 8px;
 }
+
+@media (min-width: 770px) {
+	main {
+		width: 100%;
+		margin: 7rem 2rem;
+		padding: 1.5rem 2rem 1.5rem 2.25rem;
+	}
+
+	.names__container {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+	}
+
+	.radio__btn-container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.radio__btn-container label {
+		grid-column: 1;
+		height: 2.85rem;
+	}
+
+	.radio__btn-container label:nth-of-type(2) {
+		grid-column: 2;
+	}
+
+	.radio__btn {
+		top: 2.6rem;
+		left: -18rem;
+	}
+
+	.radio__btn:nth-of-type(2) {
+		top: 2.6rem;
+		left: 2.5rem;
+	}
+
+	#message {
+		height: 130px;
+	}
+
+	.checkbox__container {
+		margin-top: 1rem;
+	}
+
+	#checkbox {
+		left: -19.2rem;
+		top: -0.3rem;
+	}
+}
