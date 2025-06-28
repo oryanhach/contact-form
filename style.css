@@ -108,6 +108,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
+	position: relative;
 }
 
 main {
@@ -279,6 +280,46 @@ button:hover {
 	background-color: var(--clr-grey-900);
 }
 
+.toast {
+	display: none;
+	position: absolute;
+	top: 1rem;
+	background-color: #2a4144;
+	width: 320px;
+	border-radius: 12px;
+	padding: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0;
+	transform: translateX(-50%) translateY(-20px);
+	transition: opacity 0.4s ease, transform 0.4s ease;
+	pointer-events: none;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.toast header {
+	display: flex;
+	gap: 0.5rem;
+	color: var(--clr-white);
+}
+
+.toast h1 {
+	font-size: 18px;
+}
+
+.toast p {
+	color: var(--clr-white);
+	font-weight: 200;
+	margin-top: 0.5rem;
+}
+
+.toast.visible {
+	display: block;
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
+}
+
 @media (min-width: 770px) {
 	main {
 		width: 100%;
@@ -329,6 +370,12 @@ button:hover {
 	#checkbox {
 		left: -19.2rem;
 		top: -0.3rem;
+	}
+
+	.toast {
+		top: 1rem;
+		width: 440px;
+		border-radius: 12px;
 	}
 }
 
