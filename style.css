@@ -150,11 +150,30 @@ input[type='email']:hover {
 	outline: 1px solid var(--clr-green-600);
 }
 
+.form-control {
+	position: relative;
+}
+
 .form-control small {
 	visibility: hidden;
 	position: absolute;
 	bottom: 0;
 	left: 0;
+}
+
+.form-control.error small {
+	color: var(--clr-red);
+	visibility: visible;
+	font-size: var(--fs-small);
+	font-weight: 700;
+}
+
+.form-control.error.radio__btn-container small {
+	bottom: -1.6rem;
+}
+
+.form-control.error input {
+	outline-color: var(--clr-red);
 }
 
 .radio__btn-container {
@@ -170,12 +189,12 @@ legend {
 	outline: none;
 	position: absolute;
 	height: 1.3rem;
-	top: 2.6rem;
+	top: 2.7rem;
 	left: -7.5rem;
 }
 
 .radio__btn:nth-of-type(2) {
-	top: 6.4rem;
+	top: 6.6rem;
 }
 
 .radio__btn:hover {
@@ -191,17 +210,35 @@ legend {
 	color: var(--clr-grey-900);
 }
 
-.radio__btn-label:hover {
-	outline: 1px solid var(--clr-green-600);
-	cursor: pointer;
-}
-
 .radio__btn-label:nth-of-type(1) {
 	margin-bottom: 1rem;
 }
 
+.radio__btn-label:hover {
+	cursor: pointer;
+}
+
+input[type='radio']:checked + .radio__btn-label {
+	background-color: #e0f1e8;
+}
+
+input[type='radio'] {
+	accent-color: var(--clr-green-600);
+}
+
 #message {
 	height: 240px;
+	width: 100%;
+	border-radius: 8px;
+	border: none;
+	outline: 1px solid var(--clr-grey-500);
+	padding: 1rem;
+	margin-block: 0.4rem 1.5rem;
+}
+
+#message:hover {
+	outline: 1px solid var(--clr-green-600);
+	cursor: pointer;
 }
 
 .checkbox__container {
@@ -220,6 +257,10 @@ legend {
 
 #checkbox:hover {
 	cursor: pointer;
+}
+
+#checkbox:checked {
+	accent-color: var(--clr-green-600);
 }
 
 button {
